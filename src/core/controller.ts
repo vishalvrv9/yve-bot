@@ -152,6 +152,9 @@ export class Controller {
     if (rule.type === 'PassiveLoop') {
       return this;
     }
+    if (rule.pause === true) {
+      return this;
+    }
 
     return this.nextRule(rule, answer);
   }

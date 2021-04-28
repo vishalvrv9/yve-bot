@@ -13,6 +13,7 @@ export interface IFlow {
 }
 
 export interface IRule {
+  pause?: boolean;
   flow?: string;
   flowIdx?: number;
   name?: string;
